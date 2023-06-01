@@ -1,0 +1,110 @@
+<%- include("header") %>
+
+
+            <div class="signup-form">
+                <form action = "/energy" method="POST" class="register-form" id="register-form">
+                    <h2>Monthly electricity data - <%= currentYear %></h2>
+                    <label class = "para" for="accNo">Account no :</label>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="year">Year :</label>
+                            <div class="form-select">
+                                <select class ="selectYear" name="year" id="year">
+                                    <option value=""></option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="month">Month :</label>
+                            <div class="form-select">
+                                <select class = "selectMonth" name="month" id="month">
+                                    <option value=""></option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="site">Site name :</label>
+                        <div class="form-select">
+                            <select class = "selectSite" name="site" id="site">
+                                <option value=""></option>
+                                <option value="KSWTP">Kandy South WTP</option>
+                                <option value="Madarangoda">Madarangoda BPH</option>
+                                <option value="Maligathanna">Maligathanna BPH</option>
+                                <option value="Kandakaduwa">Kandakaduwa BPH</option>
+                                <option value="Kehelwala">Kehelwala BPH</option>
+                                <option value="Mahakanda">Mahakanda BPH</option>
+                                <option value="MobrayI">Mobray I BPH</option>
+                                <option value="Augustawatta">Augustawatta BPH</option>
+                                <option value="Daulagala">Daulagala BPH</option>
+                            </select>
+                            <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kva">kVA :</label>
+                        <input class="nonI2I3 kva" type="text" name="kvaData" id="kvaData" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kwh-peak">kWh-Peak :</label>
+                        <input class="nonI2I3 kwh-p" type="text" name="kWhPeak" id="kWhPeak">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kwh-offpeak">kWh-Offpeak :</label>
+                        <input class="nonI2I3 kwh-op" type="text" name="kwhOffPeak" id="kwhOffPeak">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kwh-day">kWh-Day :</label>
+                        <input class="kwh-d" type="text" name="kwhDay" id="kwhDay" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="totalCost">Total cost (Rs.) :</label>
+                        <input type="text" name="totalCost" id="totalCost" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="monthlyProduction">Production (m3/month) :</label>
+                        <input class="prod" type="text" name="monthlyProduction" id="monthlyProduction" />
+                    </div>
+
+                    <div class="form-submit">
+                        <input type="submit" class="submit" id="submit" value = "Submit"/>
+                        <input type="submit" class="submit btnQulity" id="reset" value = "Next" />
+                    </div>
+                </form>
+            </div>
+
+
+<%- include("footer") %>

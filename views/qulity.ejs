@@ -1,0 +1,54 @@
+<%- include("header") %>
+
+<div class="signup-form">
+    <form action = "/qulity" method="POST" class="register-form" id="register-form">
+        <h2>Water qulity data</h2>
+        <label class = "para" for="date">Date :<%= currentDate  %></label>
+
+        <div class="form-group">
+            <label for="conductivity">Conductivity :</label>
+            <%  if(6 < currentHour && currentHour < 9 ){ %>
+            <input class="oncePerDay" type="text" name="conductivity" id="conductivity" required/>
+            <%  } else { %>
+            <input class="oncePerDay" type="text" name="conductivity" id="conductivity" placeholder="Enable during 6 am to 9am" required disabled/>
+            <%  }  %>
+        </div>
+
+        <div class="form-group">
+            <label for="pHData">pH :</label>
+            <%  if(6 < currentHour && currentHour < 9 ){ %>
+            <input class="oncePerDay" type="text" name="pHData" id="pHData" required/>
+            <%  } else { %>
+            <input class="oncePerDay" type="text" name="pHData" id="pHData" placeholder="Enable during 6 am to 9am" required disabled/>
+            <%  }  %>
+        </div>
+
+        <div class="form-group">
+            <label for="turbidityRW">Turbidity - Raw Water :</label>
+            <input type="text" name="turbidityRW" id="turbidityRW" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="turbidityPO">Turbidity - Pulsator output :</label>
+            <input type="text" name="turbidityPO" id="turbidityPO" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="turbidityCWS">Turbidity - Clear Water Sump :</label>
+            <input type="text" name="turbidityCWS" id="turbidityCWS" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="rcl">RCL - Clear Water Sump :</label>
+            <input type="text" name="rcl" id="rcl" required/>
+        </div>
+
+        <div class="form-submit">
+            <input type="submit" class="submit" id="submit" value = "Submit"/>
+            <input type="submit" class="submit btnJar" id="reset" value = "Next" />
+        </div>
+
+      </form>
+  </div>
+
+<%- include("footer") %>

@@ -1,0 +1,105 @@
+<%- include("header") %>
+
+<div class="signup-form">
+    <form action = "/productionRes" method="POST" class="register-form" id="register-form">
+        <h2>Production reservoirs - <%= currentYear %></h2>
+
+        <div class="form-group col-md-4">
+          <label class = "beakerName" for="madarangodaRes">Madarangoda :</label>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <input type="text" name="madarangodaResIn" id="madarangodaResIn" placeholder="Input (m3)" required/>
+          </div>
+
+          <div class="form-group col-md-6">
+            <input type="text" name="madarangodaResOut" id="madarangodaResOut" placeholder="Output (m3)" required/>
+          </div>
+          </div>
+
+
+          <div class="form-group col-md-4">
+            <label class = "beakerName" for="maligathannaRes">Maligathanna :</label>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <input type="text" name="maligathannaResIn" id="maligathannaResIn" placeholder="Input (m3)" required/>
+            </div>
+
+            <div class="form-group col-md-6">
+              <input type="text" name="maligathannaResOut" id="maligathannaResOut" placeholder="Output (m3)" required/>
+            </div>
+            </div>
+
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label class = "beakerName" for="kandakaduwaRes">Kandakaduwa :</label>
+            </div>
+
+            <div class="form-group col-md-6">
+              <input type="text" name="kandakaduwaRes" id="kandakaduwaRes" placeholder="(m3)" required/>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label class = "beakerName" for="prospectHillRes">Prospect-Hill :</label>
+              </div>
+
+              <div class="form-group col-md-6">
+                <input type="text" name="prospectHillRes" id="prospectHillRes" placeholder="(m3)" required/>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label class = "beakerName" for="augustawattaRes">Augustawatta :</label>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input type="text" name="augustawattaRes" id="augustawattaRes" placeholder="(m3)" required/>
+                </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class = "beakerName" for="mahakandaRes">Mahakanda :</label>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <input type="text" name="mahakandaRes" id="mahakandaRes" placeholder="(m3)" required/>
+                  </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="form-group col-md-6">
+                      <label class = "beakerName" for="mobrayI">Mobray I :</label>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <input type="text" name="mobrayI" id="mobrayI" placeholder="(m3)" required/>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label class = "beakerName" for="daulagalaRes">Daulagala :</label>
+                      </div>
+
+                      <div class="form-group col-md-6">
+                        <input type="text" name="daulagalaRes" id="daulagalaRes" placeholder="(m3)" required/>
+                      </div>
+                      </div>
+
+
+        <div class="form-submit">
+            <input type="submit" class="submit" id="submit" value = "Submit"/>
+            <input type="submit" class="submit btnLogout" id="reset" value = "Logout" />
+        </div>
+
+      </form>
+  </div>
+
+<%- include("footer") %>

@@ -1,0 +1,110 @@
+<%- include("header") %>
+
+<div class="signup-form">
+    <form action = "/motor" method="POST" class="register-form" id="register-form">
+        <h2>Motor running hours - <%= currentYear %></h2>
+
+        <div class="form-group">
+            <label class = "beakerName" for="intakePumps">Intake :</label>
+        </div>
+
+        <div class="row">
+
+          <div class="form-group col-md-4">
+              <input type="text" name="intakePumpA" id="intakePumpA" placeholder="Pump A" required/>
+          </div>
+
+          <div class="form-group col-md-4">
+              <input type="text" name="intakePumpB" id="intakePumpB" placeholder="Pump B" required/>
+          </div>
+
+          <div class="form-group col-md-4">
+              <input type="text" name="intakePumpC" id="intakePumpC" placeholder="Pump C" required/>
+          </div>
+          </div>
+
+          <div class="row">
+
+            <div class="form-group col-md-4">
+                <label class = "beakerName" for="mahakandaPumps">Mahakanda :</label>
+            </div>
+
+            <div class="form-group col-md-4">
+                <input type="text" name="mahakandaPumpA" id="mahakandaPumpA" placeholder="Pump A" required/>
+            </div>
+
+            <div class="form-group col-md-4">
+                <input type="text" name="mahakandaPumpB" id="mahakandaPumpB" placeholder="Pump B" required/>
+            </div>
+            </div>
+
+            <div class="row">
+
+              <div class="form-group col-md-4">
+                  <label class = "beakerName" for="madarangodaPumps">Madarangoda :</label>
+              </div>
+
+              <div class="form-group col-md-4">
+                  <input type="text" name="madarangodaPumpA" id="madarangodaPumpA" placeholder="Pump A" required/>
+              </div>
+
+              <div class="form-group col-md-4">
+                  <input type="text" name="madarangodaPumpB" id="madarangodaPumpB" placeholder="Pump B" required/>
+              </div>
+              </div>
+
+              <div class="row">
+
+                <div class="form-group col-md-4">
+                    <label class = "beakerName" for="angunawelaPumps">Angunawela :</label>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="text" name="angunawelaPumpA" id="angunawelaPumpA" placeholder="Pump A" required/>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="text" name="angunawelaPumpB" id="angunawelaPumpB" placeholder="Pump B" required/>
+                </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="form-group col-md-4">
+                      <label class = "beakerName" for="prospectHillPumps">Prospect-Hill :</label>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                      <input type="text" name="prospectHillPumpA" id="prospectHillPumpA" placeholder="Pump A" required/>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                      <input type="text" name="prospectHillPumpB" id="prospectHillPumpB" placeholder="Pump B" required/>
+                  </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="form-group col-md-4">
+                        <label class = "beakerName" for="kandakaduwaPumps">Kandakaduwa :</label>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <input type="text" name="kandakaduwaPumpA" id="kandakaduwaPumpA" placeholder="Pump A" required/>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <input type="text" name="kandakaduwaPumpB" id="kandakaduwaPumpB" placeholder="Pump B" required/>
+                    </div>
+                    </div>
+
+
+        <div class="form-submit">
+            <input type="submit" class="submit" id="submit" value = "Submit"/>
+            <input type="submit" class="submit btnProductionWtp" id="reset" value = "Next" />
+        </div>
+
+      </form>
+  </div>
+
+<%- include("footer") %>

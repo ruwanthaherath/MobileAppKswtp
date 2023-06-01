@@ -1,0 +1,121 @@
+<%- include("header") %>
+
+<div class="signup-form">
+    <form action = "/jar" method="POST" class="register-form" id="register-form">
+        <h2>JAR test data</h2>
+        <label class = "para" for="date">Date :<%= currentDate  %></label>
+
+        <div class="form-group">
+            <label for="turbidityJRW">Turbidity - Raw Water :</label>
+            <input type="text" name="turbidityJRW" id="turbidityJRW" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="pHJData">pH - Raw Water :</label>
+            <input class= "oncePerDay" type="text" name="pHJData" id="pHJData" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="conductivityJ">Conductivity - Raw Water :</label>
+            <input class= "oncePerDay" type="text" name="conductivityJ" id="conductivityJ" required/>
+        </div>
+
+        <div class="row">
+
+          <div class="form-group col-md-4">
+              <label class = "beakerName" for="beaker">1st beaker :</label>
+          </div>
+
+          <div class="form-group col-md-4">
+              <input type="text" name="turbidityB1" id="turbidityB1" placeholder="Turbidity 1" required/>
+          </div>
+
+          <div class="form-group col-md-4">
+              <input type="text" name="pacB1" id="pacB1" placeholder="PAC 1" required/>
+          </div>
+          </div>
+
+          <div class="row">
+
+            <div class="form-group col-md-4">
+                <label class = "beakerName" for="beaker">2nd beaker :</label>
+            </div>
+
+            <div class="form-group col-md-4">
+                <input type="text" name="turbidityB2" id="turbidityB2" placeholder="Turbidity 2" required/>
+            </div>
+
+            <div class="form-group col-md-4">
+                <input type="text" name="pacB2" id="pacB2" placeholder="PAC 2" required/>
+            </div>
+            </div>
+
+            <div class="row">
+
+              <div class="form-group col-md-4">
+                  <label class = "beakerName" for="beaker">3rd beaker :</label>
+              </div>
+
+              <div class="form-group col-md-4">
+                  <input type="text" name="turbidityB3" id="turbidityB3" placeholder="Turbidity 3" required/>
+              </div>
+
+              <div class="form-group col-md-4">
+                  <input type="text" name="pacB3" id="pacB3" placeholder="PAC 3" required/>
+              </div>
+              </div>
+
+              <div class="row">
+
+                <div class="form-group col-md-4">
+                    <label class = "beakerName" for="beaker">4th beaker :</label>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="text" name="turbidityB4" id="turbidityB4" placeholder="Turbidity 4" required/>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="text" name="pacB4" id="pacB4" placeholder="PAC 4" required/>
+                </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="form-group col-md-4">
+                      <label class = "beakerName" for="beaker">5th beaker :</label>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                      <input type="text" name="turbidityB5" id="turbidityB5" placeholder="Turbidity 5" required/>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                      <input type="text" name="pacB5" id="pacB5" placeholder="PAC 5" required/>
+                  </div>
+                  </div>
+
+                  <div class="row">
+
+                    <div class="form-group col-md-4">
+                        <label class = "beakerName" for="beaker">Selected :</label>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <input type="text" name="turbiditySel" id="turbiditySel" placeholder="Turbidity" required/>
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <input type="text" name="pacSel" id="pacSel" placeholder="PAC dose" required/>
+                    </div>
+                    </div>
+
+        <div class="form-submit">
+            <input type="submit" class="submit" id="submit" value = "Submit"/>
+            <input type="submit" class="submit btnRunHours" id="reset" value = "Next" />
+        </div>
+
+      </form>
+  </div>
+
+<%- include("footer") %>
